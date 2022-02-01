@@ -50,19 +50,31 @@ public class FormsPage {
 
     public void clickSubmitButton()
     {
-        WebElement submitButton = null;
+        clickButton("submit");
+    }
+
+    public void clickButton(String btnText)
+    {
+        WebElement button = findButton(btnText);
+        if (button != null) {
+            button.click();
+        }
+    }
+
+    private WebElement findButton(String buttonText)
+    {
+        WebElement foundBtn = null;
         var buttons = driver.findElements(By.tagName("button"));  // class = 'v-btn'
-        for (WebElement button: buttons) {
-            if (button.getText().equalsIgnoreCase("submit")) {
-                submitButton = button;
+        for (WebElement btn: buttons)
+        {
+            if (btn.getText().equalsIgnoreCase(buttonText))
+            {
+                foundBtn = btn;
                 break;
             }
         }
-        if (submitButton != null) {
-            submitButton.click();
-        }
-        else {
-            throw (new NotFoundException());
-        }
+        if (foundBtn == null) { throw (new NotFoundException()); }
+        return foundBtn;
     }
+
 }

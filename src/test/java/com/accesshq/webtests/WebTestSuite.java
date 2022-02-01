@@ -12,30 +12,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.net.MalformedURLException;
 
-public class WebTestSuite {
-
-    protected WebDriver driver;
-
-    @BeforeEach
-    public void Setup() throws MalformedURLException {
-        driver = new ChromeDriver();
-        // driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        driver.get("https://d18u5zoaatmpxx.cloudfront.net/#/");
-        driver.manage().window().maximize();
-    }
-
-    @AfterEach
-    public void Cleanup() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+public class WebTestSuite extends BaseTestSuite {
 
     @Test
     void TestFormsPageErrorMessages() throws InterruptedException {
         // arrange
         // find the web element that lets us click on the forms menu item and click on it
-        driver.findElement(By.cssSelector("[aria-label='forms']")).click();
+        var menu = new Menu(driver);
+        menu.clickForms();
 
         var formsPage = new FormsPage(driver);
         formsPage.clickSubmitButton();

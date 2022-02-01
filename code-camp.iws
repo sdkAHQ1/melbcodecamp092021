@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fac7ca8-6bcb-469c-923b-2ba2cf997c8a" name="Changes" comment="updates for code camp jan 2022">
-      <change beforePath="$PROJECT_DIR$/code-camp.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.ipr" afterDir="false" />
+    <list default="true" id="7fac7ca8-6bcb-469c-923b-2ba2cf997c8a" name="Changes" comment="refactor to add FormsPage and Menu ui modelling">
       <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/WebTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/WebTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/ui/FormsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/ui/FormsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/WebTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/WebTestSuite.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +260,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
-  <component name="RunManager" selected="JUnit.WebTestSuite.TestFormsPageErrorMessages">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.accesshq.webtests.ui" />
+      <recent name="com.accesshq.webtests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PlanetTestSuite.FindDistanceToJupiter">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -275,17 +283,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlanetTestSuite.FindDistanceToJupiter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.accesshq.apitests.*" />
+          <option name="PATTERN" value="com.accesshq.webtests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.accesshq.apitests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.apitests.ApiTestSuite" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.accesshq.webtests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.webtests.PlanetTestSuite" />
+      <option name="METHOD_NAME" value="FindDistanceToJupiter" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -391,11 +400,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlanetTestSuite.FindDistanceToJupiter" />
+        <item itemvalue="JUnit.WebTestSuite" />
         <item itemvalue="JUnit.WebTestSuite.TestFormsPageErrorMessages" />
         <item itemvalue="JUnit.WebTestSuite.SubmitForm" />
         <item itemvalue="JUnit.WebTestSuite.TestFormsPage" />
-        <item itemvalue="JUnit.WebTestSuite" />
-        <item itemvalue="JUnit.ApiTestSuite" />
       </list>
     </recent_temporary>
   </component>
@@ -444,7 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643593624464</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor to add FormsPage and Menu ui modelling">
+      <created>1643598916942</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643598916942</updated>
+    </task>
+    <task id="LOCAL-00003" summary="refactor to add FormsPage and Menu ui modelling">
+      <created>1643599047888</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643599047888</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -496,7 +519,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updates for code camp jan 2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates for code camp jan 2022" />
+    <MESSAGE value="refactor to add FormsPage and Menu ui modelling" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor to add FormsPage and Menu ui modelling" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>
