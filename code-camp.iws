@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fac7ca8-6bcb-469c-923b-2ba2cf997c8a" name="Changes" comment="refactor to add FormsPage and Menu ui modelling">
+    <list default="true" id="7fac7ca8-6bcb-469c-923b-2ba2cf997c8a" name="Changes" comment="refactor to add PlanetsPage and PlanetTile modelling">
       <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/WebTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/WebTestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/ui/FormsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/ui/FormsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/WebTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/WebTestSuite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/ui/PlanetsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/ui/PlanetsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/PlanetTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/PlanetTestSuite.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -467,7 +466,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643599047888</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactor to add PlanetsPage and PlanetTile modelling">
+      <created>1643674656064</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1643674656064</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor to add PlanetsPage and PlanetTile modelling">
+      <created>1643674661732</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643674661732</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -520,7 +533,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updates for code camp jan 2022" />
     <MESSAGE value="refactor to add FormsPage and Menu ui modelling" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor to add FormsPage and Menu ui modelling" />
+    <MESSAGE value="refactor to add PlanetsPage and PlanetTile modelling" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor to add PlanetsPage and PlanetTile modelling" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>

@@ -23,12 +23,10 @@ public class PlanetsPage {
             var currentPlanet = new PlanetTile(planet);
             if (currentPlanet.getPlanetName().equalsIgnoreCase(planetName))
             {
-                foundPlanet = currentPlanet;
-                break;
+                return currentPlanet;
             }
         }
-        if (foundPlanet == null) { throw (new NotFoundException()); }
-        return foundPlanet;
+        throw (new NotFoundException());
     }
 
 }
