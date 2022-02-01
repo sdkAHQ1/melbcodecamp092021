@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fac7ca8-6bcb-469c-923b-2ba2cf997c8a" name="Changes" comment="refactor to add PlanetsPage and PlanetTile modelling">
+    <list default="true" id="7fac7ca8-6bcb-469c-923b-2ba2cf997c8a" name="Changes" comment="improved getPlanetTileByName method">
       <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/ui/PlanetsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/ui/PlanetsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/PlanetTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/PlanetTestSuite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/BaseTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/BaseTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/WebTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/WebTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/ui/FormsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/ui/FormsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/BaseTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/BaseTestSuite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/WebTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/WebTestSuite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/ui/FormsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/ui/FormsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/ui/PlanetsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/ui/PlanetsPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +270,7 @@
       <recent name="com.accesshq.webtests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlanetTestSuite.FindDistanceToJupiter">
+  <component name="RunManager" selected="JUnit.WebTestSuite.SubmitFormAndVerifyThankYouMessage">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -344,17 +349,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTestSuite.TestFormsPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTestSuite.SubmitFormAndVerifyThankYouMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.accesshq.webtests.ui.*" />
+          <option name="PATTERN" value="com.accesshq.webtests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.accesshq.webtests" />
       <option name="MAIN_CLASS_NAME" value="com.accesshq.webtests.WebTestSuite" />
-      <option name="METHOD_NAME" value="TestFormsPage" />
+      <option name="METHOD_NAME" value="SubmitFormAndVerifyThankYouMessage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -399,11 +404,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WebTestSuite.SubmitFormAndVerifyThankYouMessage" />
         <item itemvalue="JUnit.PlanetTestSuite.FindDistanceToJupiter" />
         <item itemvalue="JUnit.WebTestSuite" />
         <item itemvalue="JUnit.WebTestSuite.TestFormsPageErrorMessages" />
         <item itemvalue="JUnit.WebTestSuite.SubmitForm" />
-        <item itemvalue="JUnit.WebTestSuite.TestFormsPage" />
       </list>
     </recent_temporary>
   </component>
@@ -480,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643674661732</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="improved getPlanetTileByName method">
+      <created>1643681569867</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643681569867</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -534,7 +546,8 @@
     <MESSAGE value="updates for code camp jan 2022" />
     <MESSAGE value="refactor to add FormsPage and Menu ui modelling" />
     <MESSAGE value="refactor to add PlanetsPage and PlanetTile modelling" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor to add PlanetsPage and PlanetTile modelling" />
+    <MESSAGE value="improved getPlanetTileByName method" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved getPlanetTileByName method" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.net.MalformedURLException;
+import java.util.concurrent.TimeUnit;
 
 public class BaseTestSuite {
 
@@ -14,7 +15,7 @@ public class BaseTestSuite {
     @BeforeEach
     public void Setup() throws MalformedURLException {
         driver = new ChromeDriver();
-        // driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.get("https://d18u5zoaatmpxx.cloudfront.net/#/");
         driver.manage().window().maximize();
     }

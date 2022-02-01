@@ -2,6 +2,7 @@ package com.accesshq.webtests;
 
 import com.accesshq.webtests.ui.FormsPage;
 import com.accesshq.webtests.ui.Menu;
+import jdk.jfr.Timespan;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 
@@ -31,17 +33,25 @@ public class WebTestSuite extends BaseTestSuite {
     }
 
     @Test
-    void SubmitForm() throws InterruptedException {
+    void SubmitFormAndVerifyThankYouMessage() throws InterruptedException {
 
+        // arrange
         // find the web element that lets us click on the forms menu item and click on it
         var menu = new Menu(driver);
         menu.clickForms();
-
         var formsPage = new FormsPage(driver);
-        formsPage.setName("Simon");
+
+        // act - enter values into the form and click submit
+        String name = "simon";
+        formsPage.setName(name);
         formsPage.setEmail("simon.kaufmann@accesshq.com");
         formsPage.clickAgree();
         formsPage.clickSubmitButton();
+
+        // assert that the thank you message pop-up appears with the right message
+        new WebDriverWait(driver, 10).until(d -> formsPage.isPopupVisible());
+        String expectedMsg = "Thanks for your feedback " + name;
+        Assertions.assertEquals(expectedMsg, formsPage.getPopupMessage() );
 
     }
 

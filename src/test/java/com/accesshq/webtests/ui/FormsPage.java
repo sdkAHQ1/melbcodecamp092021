@@ -48,6 +48,14 @@ public class FormsPage {
         driver.findElement(By.cssSelector("[for=agree]")).click();
     }
 
+    public String getPopupMessage() {
+        return driver.findElement(By.cssSelector(".snackbar")).getText();
+    }
+
+    public boolean isPopupVisible() {
+        return driver.findElement(By.cssSelector(".snackbar")).isDisplayed();
+    }
+
     public void clickSubmitButton()
     {
         clickButton("submit");
@@ -76,5 +84,6 @@ public class FormsPage {
         if (foundBtn == null) { throw (new NotFoundException()); }
         return foundBtn;
     }
+
 
 }
