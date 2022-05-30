@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fac7ca8-6bcb-469c-923b-2ba2cf997c8a" name="Changes" comment="improved getPlanetTileByName method">
+    <list default="true" id="7fac7ca8-6bcb-469c-923b-2ba2cf997c8a" name="Changes" comment="added wait to submit form test">
+      <change beforePath="$PROJECT_DIR$/code-camp.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code-camp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/BaseTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/BaseTestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/WebTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/WebTestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/ui/FormsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/webtests/ui/FormsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/BaseTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/BaseTestSuite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/apitests/ApiTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/apitests/ApiTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/code-camp-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/apitests/ApiTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/apitests/ApiTestSuite.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/WebTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/WebTestSuite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/ui/FormsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/ui/FormsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/ui/PlanetsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/accesshq/webtests/ui/PlanetsPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,8 +260,9 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
@@ -270,7 +273,7 @@
       <recent name="com.accesshq.webtests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WebTestSuite.SubmitFormAndVerifyThankYouMessage">
+  <component name="RunManager" selected="JUnit.ApiTestSuite">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -287,59 +290,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlanetTestSuite.FindDistanceToJupiter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-camp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.accesshq.webtests.*" />
+          <option name="PATTERN" value="com.accesshq.apitests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.accesshq.webtests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.webtests.PlanetTestSuite" />
-      <option name="METHOD_NAME" value="FindDistanceToJupiter" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="code-camp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.accesshq.webtests.ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.accesshq.webtests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.webtests.WebTestSuite" />
+      <option name="PACKAGE_NAME" value="com.accesshq.apitests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.apitests.ApiTestSuite" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebTestSuite.SubmitForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="code-camp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.accesshq.webtests.ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.accesshq.webtests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.webtests.WebTestSuite" />
-      <option name="METHOD_NAME" value="SubmitForm" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -370,18 +331,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTestSuite.TestFormsPageErrorMessages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="code-camp" />
+    <configuration name="Whole project (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.accesshq.webtests.ui.*" />
+          <option name="PATTERN" value="com.accesshq.webtests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.accesshq.webtests" />
-      <option name="MAIN_CLASS_NAME" value="com.accesshq.webtests.WebTestSuite" />
-      <option name="METHOD_NAME" value="TestFormsPageErrorMessages" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Whole project (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.apitests" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Whole project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.apitests" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -404,11 +398,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTestSuite" />
+        <item itemvalue="JUnit.Whole project (2)" />
+        <item itemvalue="JUnit.Whole project (1)" />
+        <item itemvalue="JUnit.Whole project" />
         <item itemvalue="JUnit.WebTestSuite.SubmitFormAndVerifyThankYouMessage" />
-        <item itemvalue="JUnit.PlanetTestSuite.FindDistanceToJupiter" />
-        <item itemvalue="JUnit.WebTestSuite" />
-        <item itemvalue="JUnit.WebTestSuite.TestFormsPageErrorMessages" />
-        <item itemvalue="JUnit.WebTestSuite.SubmitForm" />
       </list>
     </recent_temporary>
   </component>
@@ -492,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643681569867</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added wait to submit form test">
+      <created>1643684155346</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1643684155346</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -547,7 +548,8 @@
     <MESSAGE value="refactor to add FormsPage and Menu ui modelling" />
     <MESSAGE value="refactor to add PlanetsPage and PlanetTile modelling" />
     <MESSAGE value="improved getPlanetTileByName method" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved getPlanetTileByName method" />
+    <MESSAGE value="added wait to submit form test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added wait to submit form test" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>
@@ -600,5 +602,10 @@
   </component>
   <component name="WebViewSettings">
     <webview flattenPackages="false" showMembers="false" autoscrollToSource="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/code_camp$ApiTestSuite.ic" NAME="ApiTestSuite Coverage Results" MODIFIED="1653625494157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.accesshq.apitests.*</FILTER>
+    </SUITE>
   </component>
 </project>

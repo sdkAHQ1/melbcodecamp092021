@@ -191,6 +191,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/code-camp.iml" filepath="$PROJECT_DIR$/code-camp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/test/java/com/accesshq/test.iml" filepath="$PROJECT_DIR$/src/test/java/com/accesshq/test.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK" />

@@ -1,1 +1,8 @@
+com\accesshq\webtests\ui\FormsPage.class
 com\accesshq\apitests\ApiTestSuite.class
+com\accesshq\webtests\ui\PlanetTile.class
+com\accesshq\webtests\WebTestSuite.class
+com\accesshq\webtests\PlanetTestSuite.class
+com\accesshq\webtests\ui\PlanetsPage.class
+com\accesshq\webtests\BaseTestSuite.class
+com\accesshq\webtests\ui\Menu.class
