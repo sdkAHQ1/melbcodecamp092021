@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FormsPage {
 
@@ -30,6 +31,10 @@ public class FormsPage {
         return driver.findElement(By.id("email")).getText();
     }
 
+    public void setState(String state) {
+        driver.findElement(By.id("state")).sendKeys(state);
+    }
+
     public String getNameErrorMessage()
     {
         return driver.findElement(By.id("name-err")).getText();
@@ -48,8 +53,10 @@ public class FormsPage {
         driver.findElement(By.cssSelector("[for=agree]")).click();
     }
 
-    public String getPopupMessage() {
-        return driver.findElement(By.cssSelector(".snackbar")).getText();
+    public String getPopupMessageText() {
+        var popupMessageBox = driver.findElement(By.cssSelector(".snackbar"));
+        new WebDriverWait(driver, 10).until(d ->popupMessageBox.isDisplayed());
+        return popupMessageBox.getText();
     }
 
     public boolean isPopupVisible() {

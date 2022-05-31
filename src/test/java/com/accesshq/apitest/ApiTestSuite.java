@@ -1,11 +1,10 @@
-package com.accesshq.apitests;
+package com.accesshq.apitest;
 
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
 
 public class ApiTestSuite {
-
 
     @Test
     public void TestStatus() {
@@ -21,7 +20,7 @@ public class ApiTestSuite {
     }
 
     @Test
-    public void TestPostcode() {
+    public void PostcodeTest() {
         given().
                 param("q", "Tascott").and().header("auth-key", "c912db24-d4be-4303-97ff-92f940a58b8b").
         when().

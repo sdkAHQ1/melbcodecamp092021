@@ -2,17 +2,9 @@ package com.accesshq.webtests;
 
 import com.accesshq.webtests.ui.FormsPage;
 import com.accesshq.webtests.ui.Menu;
-import jdk.jfr.Timespan;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.net.MalformedURLException;
 
 public class WebTestSuite extends BaseTestSuite {
 
@@ -21,7 +13,7 @@ public class WebTestSuite extends BaseTestSuite {
         // arrange
         // find the web element that lets us click on the forms menu item and click on it
         var menu = new Menu(driver);
-        menu.clickForms();
+        menu.navigateToFormsPage();
 
         var formsPage = new FormsPage(driver);
         formsPage.clickSubmitButton();
@@ -38,7 +30,7 @@ public class WebTestSuite extends BaseTestSuite {
         // arrange
         // find the web element that lets us click on the forms menu item and click on it
         var menu = new Menu(driver);
-        menu.clickForms();
+        menu.navigateToFormsPage();
         var formsPage = new FormsPage(driver);
 
         // act - enter values into the form and click submit
@@ -51,7 +43,7 @@ public class WebTestSuite extends BaseTestSuite {
         // assert that the thank you message pop-up appears with the right message
         new WebDriverWait(driver, 10).until(d -> formsPage.isPopupVisible());
         String expectedMsg = "Thanks for your feedback " + name;
-        Assertions.assertEquals(expectedMsg, formsPage.getPopupMessage() );
+        Assertions.assertEquals(expectedMsg, formsPage.getPopupMessageText() );
 
     }
 

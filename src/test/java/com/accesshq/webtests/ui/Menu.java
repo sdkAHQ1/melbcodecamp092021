@@ -12,12 +12,12 @@ public class Menu {
         this.driver = driver;
     }
 
-    public void clickForms()
+    public void navigateToFormsPage()
     {
         driver.findElement(By.cssSelector("[aria-label='forms']")).click();
     }
 
-    public void clickPlanets()
+    public void navigateToPlanetsPage()
     {
         driver.findElement(By.cssSelector("[aria-label='planets']")).click();
     }

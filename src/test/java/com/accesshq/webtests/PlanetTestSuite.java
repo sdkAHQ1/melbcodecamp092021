@@ -12,7 +12,7 @@ public class PlanetTestSuite extends BaseTestSuite {
     {
         // arrange
         var myMenu = new Menu(driver);
-        myMenu.clickPlanets();
+        myMenu.navigateToPlanetsPage();
 
         // act - find Jupiter
         var planetsPage = new PlanetsPage(driver);
@@ -20,7 +20,6 @@ public class PlanetTestSuite extends BaseTestSuite {
 
         // assert - the distance of Jupiter from the sun is 778,500,000 km
         Assertions.assertEquals("778,500,000 km", jupiter.getDistance());
-
 
     }
 }
